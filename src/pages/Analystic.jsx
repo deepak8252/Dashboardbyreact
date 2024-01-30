@@ -19,7 +19,7 @@ const Analystic = () => {
     <div className='bgcolor'>
       <Box height={70}/>
 <Box sx={{ display: 'flex'}}>
-<Sidenavbar/>
+
 <Box component="main" sx={{ flexGrow: 1, p: 3 }}>
 <Grid container spacing={2} >
   <Grid item xs={12} lg={6} md={6}>

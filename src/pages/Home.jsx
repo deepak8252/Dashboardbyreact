@@ -18,7 +18,7 @@ const Home = () => {
     <div className='bgcolor'>
       <Box height={70}/>
 <Box sx={{ display: 'flex' }}>
-<Sidenavbar/>
+
 <Box component="main" sx={{ flexGrow: 1, p: 3 }}>
 <Grid container spacing={2}  >
   <Grid item lg={8} xs={12} md={3} sm={12}>

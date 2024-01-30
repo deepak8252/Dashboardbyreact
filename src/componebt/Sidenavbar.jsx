@@ -68,15 +68,18 @@ const Drawer = styled(MuiDrawer, { shouldForwardProp: (prop) => prop !== 'open' 
 
 export default function Sidenavbar() {
   const theme = useTheme();
-  // const [open, setOpen] = React.useState(true);
+  const [hide, sethide] = React.useState(false);
      const navigate=useNavigate();
      const open=useAppStore((state)=>state.dopen);
-
+const handlehide=()=>{
+  sethide(!hide);
+  
+}
   return (
     <Box sx={{ display: 'flex' }}>
       <CssBaseline />
      
-      <Drawer variant="permanent" open={open} >
+      <Drawer variant="permanent" open={open} onClick={handlehide} >
         <DrawerHeader>
           <IconButton >
             {theme.direction === 'rtl' ? <ChevronRightIcon /> : <ChevronLeftIcon />}

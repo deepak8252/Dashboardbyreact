@@ -16,6 +16,7 @@ import MailIcon from '@mui/icons-material/Mail';
 import NotificationsIcon from '@mui/icons-material/Notifications';
 import MoreIcon from '@mui/icons-material/MoreVert';
 import { useAppStore } from '../util/appstore';
+import Sidenavbar from './Sidenavbar';
 const AppBar = styled(MuiAppBar, {
     shouldForwardProp: (prop) => prop !== 'open',
   })(({ theme}) => ({
@@ -65,6 +66,7 @@ const StyledInputBase = styled(InputBase)(({ theme }) => ({
 
 export default function Navbar() {
   const [anchorEl, setAnchorEl] = React.useState(null);
+  const [hidemenu,sethidemenu]=React.useState(false);
   const [mobileMoreAnchorEl, setMobileMoreAnchorEl] = React.useState(null);
 const updateopen =useAppStore((state)=>state.updateopen);
 const dopen=useAppStore((state)=>state.dopen)
@@ -172,7 +174,8 @@ const dopen=useAppStore((state)=>state.dopen)
             color="inherit"
             aria-label="open drawer"
             sx={{ mr: 2 }}
-            onClick={()=>updateopen(!dopen)}
+            onClick={()=>updateopen(!dopen,sethidemenu(!hidemenu))}
+            
           >
             <MenuIcon />
           </IconButton>
@@ -237,6 +240,7 @@ const dopen=useAppStore((state)=>state.dopen)
       </AppBar>
       {renderMobileMenu}
       {renderMenu}
+     {hidemenu?<Sidenavbar/>:"<></>"  }
     </Box>
   );
 }

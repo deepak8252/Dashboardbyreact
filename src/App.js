@@ -7,6 +7,7 @@ import Setting from './pages/Setting';
 import About from './pages/About';
 import Navbar from './componebt/Navbar';
 import Analystic from './pages/Analystic';
+import Sidenavbar from './componebt/Sidenavbar';
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
   
      <BrowserRouter>
      <Navbar/>
+   
      <Routes>
       <Route path='/' element={<Home/>}/>
       <Route path='/anylastis' element={<Analystic/>}/>
