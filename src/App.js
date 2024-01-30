@@ -7,8 +7,6 @@ import Setting from './pages/Setting';
 import About from './pages/About';
 import Navbar from './componebt/Navbar';
 import Analystic from './pages/Analystic';
-import Sidenavbar from './componebt/Sidenavbar';
-
 function App() {
   return (
     <div className="App">
