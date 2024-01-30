@@ -29,4 +29,5 @@ text-transform: capitalize;
   min-height: 100vh;
   background-color: #ffff;
   background: linear-gradient(158deg,rgb(224,224,224)0%,rgb(233,237,254));
+  width: 100% !important;
 }
