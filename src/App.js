@@ -6,6 +6,7 @@ import Home from './pages/Home';
 import Setting from './pages/Setting';
 import About from './pages/About';
 import Navbar from './componebt/Navbar';
+import Analystic from './pages/Analystic';
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
      <Navbar/>
      <Routes>
       <Route path='/' element={<Home/>}/>
+      <Route path='/anylastis' element={<Analystic/>}/>
       <Route path='/setting' element={<Setting/>}/>
       <Route path='/about' element={<About/>}/>
      </Routes>

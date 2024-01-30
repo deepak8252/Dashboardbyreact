@@ -1,38 +1,32 @@
-.App {
-  text-align: center;
+.paddingall{
+  padding: 10px;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.price_title{
+font-weight: 600;
+text-transform: capitalize;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.pricetotal_title{
+ font-size: 14px;
+ text-transform: capitalize;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.icon_style{
+  margin-top:20px !important ;
+  margin-left:20px !important ;
   color: white;
 }
-
-.App-link {
-  color: #61dafb;
+.icon_styleblack{
+  color: black;
+  margin-top:20px !important ;
+  margin-left:20px !important ;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.gradient{
+  background: linear-gradient(150deg,rgba(40,34,78,1)0%,rgba(20,47,141,1)100%);
+}
+.gradientlight{
+  background: linear-gradient(158deg,rgba(53,138,148,1)0%,rgba(91,180,96,1)100%);
+}
+.bgcolor{
+  min-height: 100vh;
+  background-color: #ffff;
+  background: linear-gradient(158deg,rgb(224,224,224)0%,rgb(233,237,254));
 }
