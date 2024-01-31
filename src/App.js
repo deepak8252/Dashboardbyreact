@@ -7,6 +7,7 @@ import Setting from './pages/Setting';
 import About from './pages/About';
 import Navbar from './componebt/Navbar';
 import Analystic from './pages/Analystic';
+import Product from './pages/Product';
 function App() {
   return (
     <div className="App">
@@ -16,6 +17,7 @@ function App() {
    
      <Routes>
       <Route path='/' element={<Home/>}/>
+      <Route path='/product' element={<Product/>}/>
       <Route path='/anylastis' element={<Analystic/>}/>
       <Route path='/setting' element={<Setting/>}/>
       <Route path='/about' element={<About/>}/>

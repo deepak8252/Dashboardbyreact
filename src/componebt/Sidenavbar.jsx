@@ -142,9 +142,29 @@ const handlehide=()=>{
                     justifyContent: 'center',
                   }}
                 >
-                 <MailIcon />
+             <MailIcon />
                 </ListItemIcon>
                 <ListItemText primary="About" sx={{ opacity: open ? 1 : 0 }} />
+              </ListItemButton>
+            </ListItem>
+            <ListItem disablePadding sx={{ display: 'block' }} onClick={()=>{navigate("/product")}}>
+              <ListItemButton
+                sx={{
+                  minHeight: 48,
+                  justifyContent: open ? 'initial' : 'center',
+                  px: 2.5,
+                }}
+              >
+                <ListItemIcon
+                  sx={{
+                    minWidth: 0,
+                    mr: open ? 3 : 'auto',
+                    justifyContent: 'center',
+                  }}
+                >
+                 <MailIcon />
+                </ListItemIcon>
+                <ListItemText primary="Product" sx={{ opacity: open ? 1 : 0 }} />
               </ListItemButton>
             </ListItem>
             <ListItem disablePadding sx={{ display: 'block' }} onClick={()=>{
