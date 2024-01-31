@@ -7,7 +7,7 @@ const Addproductlist = () => {
   return (
    <>
     <Typography id="modal-modal-title" variant="h6" component="h2">
-            Add Products
+            Add Product
           </Typography>
           <IconButton sx={{position:"absolute", right:"0", top:"0", background:"red", color:"white"}}>
          <CloseIcon  sx={{ background:"red", color:"white"}} />
