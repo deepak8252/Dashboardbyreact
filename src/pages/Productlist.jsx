@@ -19,8 +19,8 @@ import Addproductlist from "../componebt/Addproductlist";
 import {
   collection,
   getDocs,
-  // addDoc,
-  // updateDoc,
+  addDoc,
+  updateDoc,
   deleteDoc,
   doc,
 } from "firebase/firestore";
@@ -52,7 +52,7 @@ export default function UsersList() {
   const handleClose = () => setOpen(false);
   useEffect(() => {
     getUsers();
-  },);
+  },[]);
 
   const getUsers = async () => {
     const data = await getDocs(empCollectionRef);
